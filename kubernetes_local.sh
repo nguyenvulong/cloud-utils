@@ -22,6 +22,17 @@ curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.14.0/kind-linux-amd64
 chmod +x ./kind 
 sudo mv ./kind /usr/local/bin/
 
+
+# INSTALL helm, kubens, kubectx, kubectl
+wget https://get.helm.sh/helm-v3.9.4-linux-amd64.tar.gz
+tar xzvf helm-v3.9.4-linux-amd64.tar.gz
+sudo mv ./linux-amd64/helm /usr/local/bin/
+
+wget https://github.com/ahmetb/kubectx/releases/download/v0.9.4/kubens
+wget https://github.com/ahmetb/kubectx/releases/download/v0.9.4/kubectx
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+
+
 # TEST
 sudo kind create cluster --name kind-1
 sudo docker ps
