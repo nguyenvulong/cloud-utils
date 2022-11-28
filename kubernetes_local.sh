@@ -33,6 +33,11 @@ wget https://github.com/ahmetb/kubectx/releases/download/v0.9.4/kubectx
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 
+# INSTALL cosign
+https://github.com/sigstore/cosign/releases/download/v1.13.1/cosign-linux-amd64
+
+# INSTALL k3d (k3s in docker)
+https://github.com/k3d-io/k3d/releases/download/v5.4.6/k3d-linux-amd64
 
 # TEST
 sudo kind create cluster --name kind-1
