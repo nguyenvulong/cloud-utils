@@ -45,4 +45,3 @@ install minikube-linux-amd64 ~/.local/bin/minikube
 # INSTALL cosign
 https://github.com/sigstore/cosign/releases/download/v1.13.1/cosign-linux-amd64
 install cosign-linux-amd64 ~/.local/bin/cosign
-
