@@ -27,7 +27,6 @@ wget https://github.com/k3d-io/k3d/releases/download/v5.4.6/k3d-linux-amd64
 install k3d-linux-amd64 ~/.local/bin/k3d
 k3d cluster create -s3 -a3 test
 
-
 # INSTALL helm, kubens, kubectx, kubectl, minikube
 wget https://get.helm.sh/helm-v3.9.4-linux-amd64.tar.gz
 tar xzvf helm-v3.9.4-linux-amd64.tar.gz
